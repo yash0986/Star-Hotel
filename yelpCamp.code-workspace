@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../express-mongo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "yelpCamp"
+	}
+}
