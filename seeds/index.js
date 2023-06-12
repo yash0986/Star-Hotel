@@ -5,7 +5,7 @@ const { places, descriptors } = require("./seedHelpers");
 mongoose.set("strictQuery", true);
 const dburl = process.env.DB_URL;
 mongoose
-  .connect("mongodb+srv://yashgarg:0zgsZzZCtLXZ9qKK@website.ktjpase.mongodb.net/")
+  .connect("mongodb://127.0.0.1:27017/yelp-camp")
   .then(() => {
     console.log("DATABASE CONNECTED!!!");
   })
