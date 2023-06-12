@@ -3,9 +3,9 @@ const Hotel = require("../models/hotel");
 const cities = require("./cities");
 const { places, descriptors } = require("./seedHelpers");
 mongoose.set("strictQuery", true);
-
+const dburl = process.env.DB_URL;
 mongoose
-  .connect("mongodb://127.0.0.1:27017/yelp-camp")
+  .connect(dburl)
   .then(() => {
     console.log("DATABASE CONNECTED!!!");
   })
