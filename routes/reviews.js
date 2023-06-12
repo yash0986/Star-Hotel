@@ -5,7 +5,7 @@ const ExpressError = require('../utils/ExpressError');
 const catchAsync = require('../utils/catchAsync');
 const {validateReview,isLoggedIn,isReviewAuthor}= require('../middleware');
 
-const Campground = require('../models/campground');
+const Hotel = require('../models/hotel');
 const Review = require('../models/review');
 const reviews = require('../controllers/reviews');
 

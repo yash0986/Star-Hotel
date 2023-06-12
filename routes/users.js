@@ -4,7 +4,7 @@ const passport = require('passport');
 const catchAsync = require('../utils/catchAsync');
 const User = require('../models/user');
 const users = require('../controllers/users');
-const campground = require('../models/campground');
+const hotel = require('../models/hotel');
 
 router.route('/register')
     .get(users.renderRegister)

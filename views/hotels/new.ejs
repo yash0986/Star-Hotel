@@ -2,19 +2,19 @@
 
 
     <div class="row">
-            <h1 class="text-center"> Add Campground</h1>
+            <h1 class="text-center"> Add Hotel</h1>
             <div class="col-md-6 offset-md-3">
-                <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+                <form action="/hotels" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label class="form-label " for="title"> Enter the Title</label>
-                        <input class="form-control" type="text" id="title" name="campground[title]" required>
+                        <input class="form-control" type="text" id="title" name="hotel[title]" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label " for="location"> Enter the location</label>
-                        <input class="form-control" type="text" id="location" name="campground[location]" required
+                        <input class="form-control" type="text" id="location" name="hotel[location]" required
                             placeholder="loation">
                             <div class="valid-feedback">
                                 Looks good!
@@ -22,11 +22,11 @@
                     </div>
                     
                     <div class="mb-3">
-                        <label class="form-label " for="price">Campground Price</label>
+                        <label class="form-label " for="price">Hotel Price</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="price-label">$</span>
                             <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
-                                aria-describedby="price-label" name="campground[price]" required>
+                                aria-describedby="price-label" name="hotel[price]" required>
                         </div>
                         <div class="valid-feedback">
                             Looks good!
@@ -36,7 +36,7 @@
                     <div class="mb-3">
                         <label class="form-label " for="description">Description</label>
                         <textarea class="form-control" type="text" id="description"
-                            name="campground[description]" required></textarea>
+                            name="hotel[description]" required></textarea>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -51,11 +51,11 @@
                             </div>
                         </div>
                     <div class="mb-3 ">
-                        <button class="btn btn-success">Add Campground</button>
+                        <button class="btn btn-success">Add Hotel</button>
 
                     </div>
                 </form>
-                <a href="/campgrounds">All Campgrounds</a>
+                <a href="/hotels">All Hotel</a>
 
             </div>
     </div>
