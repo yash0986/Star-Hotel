@@ -5,7 +5,7 @@ const { places, descriptors } = require("./seedHelpers");
 mongoose.set("strictQuery", true);
 const dburl = process.env.DB_URL;
 mongoose
-  .connect(dburl)
+  .connect("mongodb+srv://yashgarg:0zgsZzZCtLXZ9qKK@website.ktjpase.mongodb.net/")
   .then(() => {
     console.log("DATABASE CONNECTED!!!");
   })
