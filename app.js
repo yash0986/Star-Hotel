@@ -20,11 +20,12 @@ mongoose.set("strictQuery", true);
 const userRoutes = require("./routes/users");
 const hotelRoutes = require("./routes/hotels");
 const reviewRoutes = require("./routes/reviews");
+const { strict } = require("assert");
 // mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp')
-const dburl = process.env.DB_URL;
+const  dburl = process.env.DB_URL;
 // "mongodb://127.0.0.1:27017/yelp-camp"
 mongoose
-  .connect(dburl)
+  .connect(process.env.DB_URL)
   .then(() => {
     console.log("CONNECTION OPEN!!!");
   })
